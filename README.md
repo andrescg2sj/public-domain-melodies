@@ -89,12 +89,12 @@ significant bits. Therefore, it is (or it seems to me) more intuitive to
 write them left to right (least significant bits to the left). If we
 arrange the data accordingly, the result is as follows:
 
-  ------------- ---------- ---------- ----------
-  Character     H          i          !
-  Byte index    0          1          2
-  Bit indices   01234567   01234567   01234567
-  Bit values    00010010   10010110   10000100
-  ------------- ---------- ---------- ----------
+ | -------------| ----------| ----------| ----------|
+ | Character    | H         | i         | !         |
+ | Byte index   | 0         | 1         | 2         |
+ | Bit indices  | 01234567  | 01234567  | 01234567  |
+ | Bit values   | 00010010  | 10010110  | 10000100  |
+ | -------------| ----------| ----------| ----------|
 
 Now, we look for a way to convert a binary sequence to a sequence of
 notes. Given that we consider one octave of the diatonic scale, we have
