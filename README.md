@@ -94,7 +94,7 @@ arrange the data accordingly, the result is as follows:
  | Byte index    | 0          | 1          | 2          |
  | Bit indices   | 01234567   | 01234567   | 01234567   |
  | Bit values    | 00010010   | 10010110   | 10000100   |
- | ------------- | ---------- | ---------- | ---------- |
+
 
 Now, we look for a way to convert a binary sequence to a sequence of
 notes. Given that we consider one octave of the diatonic scale, we have
@@ -168,9 +168,9 @@ the file, the flags are counted.
 What is the number of all 3-byte possible sequences? Or what is the
 same, what's the number of all possible 8-long melodies of one octave
 range (8 notes)? This can be considered 8-position variations with
-repetition of 8 elements, which is VR~8,8~ = 8^8^ = 16,777,216
+repetition of 8 elements, which is VR<sub>8,8</sub> = 8<sup>8</sup> = 16,777,216
 (alternatively, if we expand each note as a three bit sequence, we have
-3·8 = 24 positions, and therefore VR~2,24~ = 2^24^ = 16,777,216).
+3·8 = 24 positions, and therefore VR<sub>2,24</sub> = 2<sup>24</sup> = 16,777,216).
 
 So, to sum up, the program counts all different three-byte variations
 present in the input file. If the number is 16,777,216 (the maximum), we
@@ -229,7 +229,6 @@ automatically from a piece of public-domain content.
 | [Carnival of Souls](https://upload.wikimedia.org/wikipedia/commons/6/69/Carnival_of_Souls_(1962)_by_Herk_Harvey.webm)                         | 1962 |
 | [McLintock!](https://upload.wikimedia.org/wikipedia/commons/7/77/McLintock!_(1963).webm)                                                      | 1963 |
 | [Night of the Living Dead](https://upload.wikimedia.org/wikipedia/commons/2/24/Night_of_the_Living_Dead_(1968).webm)                          | 1968 |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
 
 
 ## Conclusion and future work
