@@ -30,14 +30,7 @@ copyrighted before them), their plan is to release them all into the
 public domain, so from this point on, artists can freely use those
 remaining melodies without worries.
 
-Riehl refers to a case where Katy Perry lost a lawsuit. The plaintiff
-argued that they had more than 3 million views, therefore, Perry most
-probably had heard that song before (15:00). Accordingly, Riehl proposes
-that, if his talk reaches 3 million views, future lawsuits will have to
-consider the fact that everyone music company knows that every melody is
-copyrighted, and that will force the music industry to rethink copyright
-and move towards fairer and more reasonable ways to resolve creativity
-conflicts.
+Riehl's final reflection highlights how the current situation places the burden of proof on the songwriter, which is a very difficult position to defend. Therefore, we should look for new and different approaches. 
 	
 This project aims to contribute more visibility and a new perspective to
 this matter.
