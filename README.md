@@ -89,8 +89,8 @@ significant bits. Therefore, it is (or it seems to me) more intuitive to
 write them left to right (least significant bits to the left). If we
 arrange the data accordingly, the result is as follows:
 
- | ------------- | ---------- | ---------- | ---------- |
  | Character     | H          | i          | !          |
+ | ------------- | ---------- | ---------- | ---------- |
  | Byte index    | 0          | 1          | 2          |
  | Bit indices   | 01234567   | 01234567   | 01234567   |
  | Bit values    | 00010010   | 10010110   | 10000100   |
@@ -195,8 +195,8 @@ three-byte variations. Therefore, if we apply `melodize.py` on any of
 them, we will obtain all possible eight-note melodies derived
 automatically from a piece of public-domain content.
 
-| --------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
 | Movie                                                                                                                                         | Year |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
 | [Check and Double Check](https://upload.wikimedia.org/wikipedia/commons/5/5e/Check_and_Double_Check_(1930)_by_Melville_W._Brown.webm)         | 1930 |
 | [Danger Lights](https://upload.wikimedia.org/wikipedia/commons/2/26/Danger_Lights,_1930,_original_version,_HR.webm)                           | 1930 |
 | [Dixiana](https://upload.wikimedia.org/wikipedia/commons/e/ee/Dixiana_(1930)_by_Luther_Reed.webm)                                             | 1930 |
