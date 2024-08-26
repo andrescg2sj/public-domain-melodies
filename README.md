@@ -78,7 +78,7 @@ standard:
 
 'H' → 72 → 0100 1000
 
-'i' →105 → 0110 1001
+'i' → 105 → 0110 1001
 
 '!' → 33 → 0010 0001
 
@@ -89,12 +89,12 @@ significant bits. Therefore, it is (or it seems to me) more intuitive to
 write them left to right (least significant bits to the left). If we
 arrange the data accordingly, the result is as follows:
 
- | -------------| ----------| ----------| ----------|
- | Character    | H         | i         | !         |
- | Byte index   | 0         | 1         | 2         |
- | Bit indices  | 01234567  | 01234567  | 01234567  |
- | Bit values   | 00010010  | 10010110  | 10000100  |
- | -------------| ----------| ----------| ----------|
+ | ------------- | ---------- | ---------- | ---------- |
+ | Character     | H          | i          | !          |
+ | Byte index    | 0          | 1          | 2          |
+ | Bit indices   | 01234567   | 01234567   | 01234567   |
+ | Bit values    | 00010010   | 10010110   | 10000100   |
+ | ------------- | ---------- | ---------- | ---------- |
 
 Now, we look for a way to convert a binary sequence to a sequence of
 notes. Given that we consider one octave of the diatonic scale, we have
@@ -107,42 +107,35 @@ groups of three bits, and we obtain the following:
 Now, we consider the following encoding:
 
 000 →
-![](./Pictures/10000001000000240000004814EC6137.png){width="0.679cm"
-height="1.356cm"}
+![](./Pictures/10000001000000240000004814EC6137.png)
 
 100
-→![](./Pictures/10000001000000300000004B0A88B792.png){width="0.848cm"
-height="1.109cm"}
+→![](./Pictures/10000001000000300000004B0A88B792.png)
 
 010
-→![](./Pictures/10000001000000300000004B88F43D34.png){width="0.949cm"
-height="1.252cm"}
+→![](./Pictures/10000001000000300000004B88F43D34.png)
 
 110 →
-![](./Pictures/100000010000002D0000004BF9DCB8C4.png){width="1.023cm"
-height="1.291cm"}
+![](./Pictures/100000010000002D0000004BF9DCB8C4.png)
 
 001 →
-![](./Pictures/10000001000000240000004BC721292A.png){width="0.935cm"
-height="1.376cm"}
+![](./Pictures/10000001000000240000004BC721292A.png)
 
 101 →
-![](./Pictures/10000001000000290000004B19635E65.png){width="1.041cm"
-height="1.508cm"}
+![](./Pictures/10000001000000290000004B19635E65.png)
 
 011 →
-![](./Pictures/100000010000002E0000004BA82DE898.png){width="1.094cm"
-height="1.441cm"}
+![](./Pictures/100000010000002E0000004BA82DE898.png)
 
 111 →
-![](./Pictures/1000000100000033000000527E765B5A.png){width="1.201cm"
-height="1.498cm"}
+![](./Pictures/1000000100000033000000527E765B5A.png)
 
 If we apply this encoding to the example bit sequence, and we obtain
 this melody:
 
-![](./Pictures/10000001000002610000005F5B45FBD5.png){width="17cm"
-height="2.649cm"}
+
+![](./Pictures/10000001000002610000005F5B45FBD5.png)
+
 
 We can follow the same scheme to encode any file, with any length (if
 the number of bits is not a multiple of three, we fill with zeros at the
@@ -202,41 +195,42 @@ three-byte variations. Therefore, if we apply `melodize.py` on any of
 them, we will obtain all possible eight-note melodies derived
 automatically from a piece of public-domain content.
 
-  --------------------------------------------------------------------------------------------------------------------------------------------- ------
-  Movie                                                                                                                                         Year
-  [Check and Double Check](https://upload.wikimedia.org/wikipedia/commons/5/5e/Check_and_Double_Check_(1930)_by_Melville_W._Brown.webm)         1930
-  [Danger Lights](https://upload.wikimedia.org/wikipedia/commons/2/26/Danger_Lights,_1930,_original_version,_HR.webm)                           1930
-  [Dixiana](https://upload.wikimedia.org/wikipedia/commons/e/ee/Dixiana_(1930)_by_Luther_Reed.webm)                                             1930
-  [Half Shot at Sunrise](https://upload.wikimedia.org/wikipedia/commons/d/d5/Half_Shot_at_Sunrise_(1930)_by_Paul_Sloane.webm)                   1930
-  [Hook, Line and Sinker](https://upload.wikimedia.org/wikipedia/commons/9/91/Hook,_Line_and_Sinker_(1930)_by_Edward_F._Cline.webm)             1930
-  [The Front Page](https://upload.wikimedia.org/wikipedia/commons/9/91/The_Front_Page_(1931).webm)                                              1931
-  [Bird of Paradise](https://upload.wikimedia.org/wikipedia/commons/d/dc/Bird_of_Paradise_(1932).webm)                                          1932
-  [Becky Sharp](https://upload.wikimedia.org/wikipedia/commons/0/0c/Becky_Sharp_(1935).webm)                                                    1935
-  [Disorder in the Court](https://upload.wikimedia.org/wikipedia/commons/e/ed/Three_Stooges_Disorder_In_The_Court_(Blu-ray_restoration).webm)   1936
-  [Gulliver\'s Travels](https://upload.wikimedia.org/wikipedia/commons/8/87/Gullivers_Travels_(1939).webm)                                      1939
-  [Made for Each Other](https://upload.wikimedia.org/wikipedia/commons/d/d4/Made_for_Each_Other_(1939).webm)                                    1939
-  [The Flying Deuces](https://upload.wikimedia.org/wikipedia/commons/0/05/The_Flying_Deuces_(1939)_by_A._Edward_Sutherland.webm)                1939
-  [His Girl Friday](https://upload.wikimedia.org/wikipedia/commons/d/df/His_Girl_Friday_(1940)_by_Howard_Hawks.webm)                            1940
-  [Meet John Doe](https://upload.wikimedia.org/wikipedia/commons/2/2b/Meet_John_Doe.webm)                                                       1941
-  [Captain Kidd](https://upload.wikimedia.org/wikipedia/commons/9/9a/Captain_Kidd_(1945)_by_Rowland_V._Lee.webm)                                1945
-  [Detour](https://upload.wikimedia.org/wikipedia/commons/b/b7/Detour_(1945)_by_Edgar_G._Ulmer.webm)                                            1945
-  [The Chase](https://upload.wikimedia.org/wikipedia/commons/6/6d/The_Chase_(1946)_by_Arthur_Ripley.webm)                                       1946
-  [The Strange Love of Martha Ivers](https://upload.wikimedia.org/wikipedia/commons/1/1f/The_Strange_Love_of_Martha_Ivers_(1946).webm)          1946
-  [The Stranger](https://upload.wikimedia.org/wikipedia/commons/9/94/The_Stranger_(1946)_by_Orson_Welles.webm)                                  1946
-  [At War with the Army](https://upload.wikimedia.org/wikipedia/commons/1/17/At_War_With_The_Army.webm)                                         1950
-  [Cyrano de Bergerac](https://upload.wikimedia.org/wikipedia/commons/a/a1/Cyrano_de_Bergerac_(1950).webm)                                      1950
-  [Go for Broke!](https://upload.wikimedia.org/wikipedia/commons/0/06/Go_For_Broke!_(1951)_by_Robert_Pirosh.webm)                               1951
-  [Beat the Devil](https://upload.wikimedia.org/wikipedia/commons/c/c1/Beat_the_Devil_(H._Bogart_-_G._Lollobrigida,_1953)_HD.webm)              1953
-  [The Hitch-Hiker](https://upload.wikimedia.org/wikipedia/commons/f/fa/The_Hitch-Hiker.webm)                                                   1953
-  [Salt of the Earth](https://upload.wikimedia.org/wikipedia/commons/6/69/Salt_of_the_Earth_(1954)_by_Herbert_J._Biberman.webm)                 1954
-  [Suddenly](https://upload.wikimedia.org/wikipedia/commons/6/66/Suddenly_(1954).webm)                                                          1954
-  [Attack of the Giant Leeches](https://upload.wikimedia.org/wikipedia/commons/c/c8/Attack_of_the_Giant_Leeches.webm)                           1959
-  [House on Haunted Hill](https://upload.wikimedia.org/wikipedia/commons/b/bb/House_on_Haunted_Hill_(1959)_by_William_Castle.webm)              1959
-  [The Little Shop of Horrors](https://upload.wikimedia.org/wikipedia/commons/2/20/The_Little_Shop_of_Horrors_(1960)_by_Roger_Corman.webm)      1960
-  [Carnival of Souls](https://upload.wikimedia.org/wikipedia/commons/6/69/Carnival_of_Souls_(1962)_by_Herk_Harvey.webm)                         1962
-  [McLintock!](https://upload.wikimedia.org/wikipedia/commons/7/77/McLintock!_(1963).webm)                                                      1963
-  [Night of the Living Dead](https://upload.wikimedia.org/wikipedia/commons/2/24/Night_of_the_Living_Dead_(1968).webm)                          1968
-  --------------------------------------------------------------------------------------------------------------------------------------------- ------
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| Movie                                                                                                                                         | Year |
+| [Check and Double Check](https://upload.wikimedia.org/wikipedia/commons/5/5e/Check_and_Double_Check_(1930)_by_Melville_W._Brown.webm)         | 1930 |
+| [Danger Lights](https://upload.wikimedia.org/wikipedia/commons/2/26/Danger_Lights,_1930,_original_version,_HR.webm)                           | 1930 |
+| [Dixiana](https://upload.wikimedia.org/wikipedia/commons/e/ee/Dixiana_(1930)_by_Luther_Reed.webm)                                             | 1930 |
+| [Half Shot at Sunrise](https://upload.wikimedia.org/wikipedia/commons/d/d5/Half_Shot_at_Sunrise_(1930)_by_Paul_Sloane.webm)                   | 1930 |
+| [Hook, Line and Sinker](https://upload.wikimedia.org/wikipedia/commons/9/91/Hook,_Line_and_Sinker_(1930)_by_Edward_F._Cline.webm)             | 1930 |
+| [The Front Page](https://upload.wikimedia.org/wikipedia/commons/9/91/The_Front_Page_(1931).webm)                                              | 1931 |
+| [Bird of Paradise](https://upload.wikimedia.org/wikipedia/commons/d/dc/Bird_of_Paradise_(1932).webm)                                          | 1932 |
+| [Becky Sharp](https://upload.wikimedia.org/wikipedia/commons/0/0c/Becky_Sharp_(1935).webm)                                                    | 1935 |
+| [Disorder in the Court](https://upload.wikimedia.org/wikipedia/commons/e/ed/Three_Stooges_Disorder_In_The_Court_(Blu-ray_restoration).webm)   | 1936 |
+| [Gulliver\'s Travels](https://upload.wikimedia.org/wikipedia/commons/8/87/Gullivers_Travels_(1939).webm)                                      | 1939 |
+| [Made for Each Other](https://upload.wikimedia.org/wikipedia/commons/d/d4/Made_for_Each_Other_(1939).webm)                                    | 1939 |
+| [The Flying Deuces](https://upload.wikimedia.org/wikipedia/commons/0/05/The_Flying_Deuces_(1939)_by_A._Edward_Sutherland.webm)                | 1939 |
+| [His Girl Friday](https://upload.wikimedia.org/wikipedia/commons/d/df/His_Girl_Friday_(1940)_by_Howard_Hawks.webm)                            | 1940 |
+| [Meet John Doe](https://upload.wikimedia.org/wikipedia/commons/2/2b/Meet_John_Doe.webm)                                                       | 1941 |
+| [Captain Kidd](https://upload.wikimedia.org/wikipedia/commons/9/9a/Captain_Kidd_(1945)_by_Rowland_V._Lee.webm)                                | 1945 |
+| [Detour](https://upload.wikimedia.org/wikipedia/commons/b/b7/Detour_(1945)_by_Edgar_G._Ulmer.webm)                                            | 1945 |
+| [The Chase](https://upload.wikimedia.org/wikipedia/commons/6/6d/The_Chase_(1946)_by_Arthur_Ripley.webm)                                       | 1946 |
+| [The Strange Love of Martha Ivers](https://upload.wikimedia.org/wikipedia/commons/1/1f/The_Strange_Love_of_Martha_Ivers_(1946).webm)          | 1946 |
+| [The Stranger](https://upload.wikimedia.org/wikipedia/commons/9/94/The_Stranger_(1946)_by_Orson_Welles.webm)                                  | 1946 |
+| [At War with the Army](https://upload.wikimedia.org/wikipedia/commons/1/17/At_War_With_The_Army.webm)                                         | 1950 |
+| [Cyrano de Bergerac](https://upload.wikimedia.org/wikipedia/commons/a/a1/Cyrano_de_Bergerac_(1950).webm)                                      | 1950 |
+| [Go for Broke!](https://upload.wikimedia.org/wikipedia/commons/0/06/Go_For_Broke!_(1951)_by_Robert_Pirosh.webm)                               | 1951 |
+| [Beat the Devil](https://upload.wikimedia.org/wikipedia/commons/c/c1/Beat_the_Devil_(H._Bogart_-_G._Lollobrigida,_1953)_HD.webm)              | 1953 |
+| [The Hitch-Hiker](https://upload.wikimedia.org/wikipedia/commons/f/fa/The_Hitch-Hiker.webm)                                                   | 1953 |
+| [Salt of the Earth](https://upload.wikimedia.org/wikipedia/commons/6/69/Salt_of_the_Earth_(1954)_by_Herbert_J._Biberman.webm)                 | 1954 |
+| [Suddenly](https://upload.wikimedia.org/wikipedia/commons/6/66/Suddenly_(1954).webm)                                                          | 1954 |
+| [Attack of the Giant Leeches](https://upload.wikimedia.org/wikipedia/commons/c/c8/Attack_of_the_Giant_Leeches.webm)                           | 1959 |
+| [House on Haunted Hill](https://upload.wikimedia.org/wikipedia/commons/b/bb/House_on_Haunted_Hill_(1959)_by_William_Castle.webm)              | 1959 |
+| [The Little Shop of Horrors](https://upload.wikimedia.org/wikipedia/commons/2/20/The_Little_Shop_of_Horrors_(1960)_by_Roger_Corman.webm)      | 1960 |
+| [Carnival of Souls](https://upload.wikimedia.org/wikipedia/commons/6/69/Carnival_of_Souls_(1962)_by_Herk_Harvey.webm)                         | 1962 |
+| [McLintock!](https://upload.wikimedia.org/wikipedia/commons/7/77/McLintock!_(1963).webm)                                                      | 1963 |
+| [Night of the Living Dead](https://upload.wikimedia.org/wikipedia/commons/2/24/Night_of_the_Living_Dead_(1968).webm)                          | 1968 |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+
 
 ## Conclusion and future work
 
@@ -296,12 +290,15 @@ $ python3 melodize.py
 ```
 
 **Warning! The program melodize.py produces a set of files that multiply
-the size of the input file by a factor of almost *40 times*. If you use
+the size of the input file by a factor of almost _40 times_. If you use
 big files as input (such as video files), you risk running out of disk
 space. For example, if your input file is 1 GB, the created files will
-take almost 40 GB of your disk space. It is _your responsibility_ to
-check that you have enough disk space if you choose to run this program.**
+take almost 40 GB of your disk space. Please MAKE SURE TO CHECK THAT YOU HAVE ENOUGH DISK SPACE before running this program.**
+
+## Final notes
 
 Thank you for reading.
 
-Please report comments or bugs to andres.glez.sj (at) gmail (com).
+The programs included in this project are mostly a proof of concept, so they are not thoroughly debugged, and they may contain errors.
+
+Please, feel free to file bug tickets in the repository, or send any comments to andres.glez.sj (at) gmail (com).
