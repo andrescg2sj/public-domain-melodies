@@ -12,7 +12,7 @@ and conceptualization that need attention.
 
 ## Introduction
 
-In his [TED Talk](https://www.youtube.com/watch?v=rjpTBHjeZ_0), Damien
+In his [TED Talk](https://www.youtube.com/watch?v=rjpTBHjeZ_0) (later commented on by Adam Neely](https://www.youtube.com/watch?v=sfXn_ecH5Rw)), Damien
 Riehl explains how melody copyright causes unnecessary conflicts and
 lawsuits. In the current situation, artists can publish a song and only
 realize that it's already copyrighted when they are sued. That is like
@@ -293,4 +293,4 @@ Thank you for reading.
 
 The programs included in this project are mostly a proof of concept, so they are not thoroughly debugged, and they may contain errors.
 
-Please, feel free to file bug tickets in the repository, or send any comments to andres.glez.sj (at) gmail (com).
+Please, feel free to file bug tickets in the repository, or send any comments to andres.glez.sj (at) gmail (dot) com.
