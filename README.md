@@ -12,7 +12,7 @@ and conceptualization that need attention.
 
 ## Introduction
 
-In his [TED Talk](https://www.youtube.com/watch?v=rjpTBHjeZ_0) (later commented on by Adam Neely](https://www.youtube.com/watch?v=sfXn_ecH5Rw)), Damien
+In his [TED Talk](https://www.youtube.com/watch?v=rjpTBHjeZ_0) (later [commented on by Adam Neely](https://www.youtube.com/watch?v=sfXn_ecH5Rw)), Damien
 Riehl explains how melody copyright causes unnecessary conflicts and
 lawsuits. In the current situation, artists can publish a song and only
 realize that it's already copyrighted when they are sued. That is like
