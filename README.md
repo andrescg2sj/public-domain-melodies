@@ -12,8 +12,7 @@ and conceptualization that need attention.
 
 ## Introduction
 
-In his [TED Talk](https://www.youtube.com/watch?v=rjpTBHjeZ_0) (later [commented on by Adam Neely](https://www.youtube.com/watch?v=sfXn_ecH5Rw)), Damien
-Riehl explains how melody copyright causes unnecessary conflicts and
+This project is inspired in a [TED Talk](https://www.youtube.com/watch?v=rjpTBHjeZ_0) given by Damien Riehl. (later [commented on by Adam Neely](https://www.youtube.com/watch?v=sfXn_ecH5Rw)), In this talk, he explains how melody copyright causes unnecessary conflicts and
 lawsuits. In the current situation, artists can publish a song and only
 realize that it's already copyrighted when they are sued. That is like
 walking "on a \[melodic\] minefield" (14:30). Many musicians are in
@@ -32,8 +31,8 @@ remaining melodies without worries.
 
 Riehl's final reflection highlights how the current situation places the burden of proof on the songwriter, which is a very difficult position to defend. Therefore, we should look for new and different approaches. 
 	
-This project aims to contribute more visibility and a new perspective to
-this matter.
+This project aims to contribute an additional perspective and 
+invite to keep thinking about this matter.
 
 ## Methodology
 
